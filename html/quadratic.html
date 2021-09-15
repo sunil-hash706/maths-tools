@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths</title>
+    <link rel="stylesheet" href="/css/page.css">
+    <link rel="stylesheet" href="/css/box.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/css/background.css">
+</head>
+
+<body class="black_bg" id="body">
+    <nav class="nav_black" id="navbar">
+        <ul id="navitems">
+            <li class="navitem"> <a class="nav_black" href="/index.html">HOME</a> </li>
+            <li class="navitem"> <a class="nav_black" href="">Our other website</a> </li>
+           
+            <li class="navitem">
+                ChangeTheam
+                <input style="width: 30px;" type="range" min="1" max="2" class="slider" id="myRange">
+            </li>
+        </ul>
+    </nav>
+    <div style="z-index: -5;" class="flex_box margin top_height box">
+        <h2> If equation is aX^2+bX+c then enter the value below</h2>
+    </div>
+    <div class="input flex_box margin box">
+        <input style="height: 35px;" type="number" name="" placeholder="Cofficient of X^2 (a)" id="input3">
+        <input style="height: 35px;" type="number" name="" placeholder="Cofficient of X (b)" id="input4">
+        <input style="height: 35px;" type="number" name="" placeholder="Cnstant (c)" id="input5">
+        <button onclick="calculateroot()" style="background-color: white; margin: 10px;">Calculate</button>
+
+    </div>
+    <div class="flex_box box">
+        <div id="output1" class="flex_box top_height">Root 1ST</div>
+        <div id="output2" class="flex_box top_height">Root 2ND</div>
+    </div>
+    <script src="/javascript/index.js"></script>
+</body>
+
+</html>

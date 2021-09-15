@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths</title>
+    <link rel="stylesheet" href="/css/page.css">
+    <link rel="stylesheet" href="/css/box.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/css/background.css">
+</head>
+
+<body class="black_bg" id="body">
+    <nav class="nav_black" id="navbar">
+        <ul id="navitems">
+            <li class="navitem"> <a class="nav_black" href="/index.html">HOME</a> </li>
+            <li class="navitem"> <a class="nav_black" href="">Our other website</a> </li>
+          
+            <li class="navitem">
+                ChangeTheam
+                <input style="width: 30px;" type="range" min="1" max="2" class="slider" id="myRange">
+            </li>
+        </ul>
+    </nav>
+    <div style="flex-direction: column; text-align: center;" class="flex_box margin">
+        <div class="box" id="perimeter1">
+            <h2 style="color: black;" class="middle">Circle</h2>
+            <input id="radius1" style="height: 40px;" type="number" name="" placeholder="Enter radius" id="">
+            <button class = "margin"onclick="perimeterc()">calculate</button>
+            <h2 id ="circleperimeter" style="color: black;">perimeter</h2>
+        </div><br>
+        <div class="box" id="perimeter2">
+            <h2 style="color: black;" class="middle">Square</h2>
+            <input id="sides" style="height: 40px;" type="number" name="" placeholder="Enter side" id="">
+            <button class = "margin"onclick="perimeters()">calculate</button>
+            <h2 id ="squperimeterrea" style="color: black;">perimeter</h2>
+        </div><br>
+        <div class="box" id="perimeter3">
+            <h2 style="color: black;" class="middle">Rectangle</h2>
+            <input id="sider1" style="height: 40px;" type="number" name="" placeholder="Enter length" >
+            <input id="sider2" style="height: 40px;" type="number" name="" placeholder="Enter width" >
+            <button class = "margin"onclick="perimeterr()">calculate</button>
+            <h2 id ="rectangleperimeter" style="color: black;">perimeter</h2>
+        </div><br>
+        <div class="box" id="perimeter4">
+            <h2 style="color: black;" class="middle">Right angle triangle</h2>
+            <input id="sidet3" style="height: 40px;" type="number" name="" placeholder="Enter height" >
+            <input id="sidet4" style="height: 40px;" type="number" name="" placeholder="Enter base" >
+            <button class = "margin"onclick="perimetert()">calculate</button>
+            <h2 id ="triangleperimeter" style="color: black;">perimeter</h2>
+        </div><br>
+    </div>
+    <script src="/javascript/index.js"></script>
+</body>
+
+</html>

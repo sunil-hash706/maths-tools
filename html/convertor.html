@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+    <link rel="stylesheet" href="/css/page.css">
+    <link rel="stylesheet" href="/css/box.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/css/background.css">
+</head>
+
+<body>
+    <nav class="nav_black" id="navbar">
+        <ul id="navitems">
+            <li class="navitem"> <a class="nav_black" href="/index.html">HOME</a> </li>
+            <li class="navitem"> <a class="nav_black" href="">Our other website</a> </li>
+
+            <li class="navitem">
+                ChangeTheam
+                <input style="width: 30px;" type="range" min="1" max="2" class="slider" id="myRange">
+            </li>
+        </ul>
+    </nav>
+    <div class="flex_box">
+        <div class="box1">
+            <div style="flex-direction: column;" class="flex_box">
+                <div class=""><button onclick="showlength()" class="slip white_bg">Length</button></div>
+                <div class=""><button onclick="showarea()" class="slip white_bg">Area</button></div>
+                <div class=""><button onclick="showtime()" class="slip white_bg">Time</button></div>
+                <div class=""><button onclick="showvolume()" class="slip white_bg">Volume</button></div>
+                <div class=""><button onclick="showtemperature()" class="slip white_bg">Temperature</button></div>
+                <div class=""><button onclick="showweight()" class="slip white_bg">Weight</button></div>
+            </div>
+        </div>
+
+
+        <div style="position: relative;" class="box2" id="length_box">
+            <div class="flex_box">
+                <label class="" for="unitlength1"></label>
+                <select class="top_height"style="height: 35px;width: 160px; "  name="length_unit" id="unitlength1">
+                    <option value="millimeter">millimeter</option>
+                    <option value="nanometer">nanometer</option>
+                    <option value="micrometer">micrometer</option>
+                    <option value="centimeter">centimeter</option>
+                    <option value="yard">yard</option>
+                    <option value="meter">meter</option>
+                    <option value="inch">inch</option>
+                    <option value="feet">feet</option>
+                    <option value="kilometer">kilometer</option>
+                    <option value="mile">mile</option>
+                </select>
+                <h5 class="top_height" style="left: 40px;">TO</h5>
+                <label class="" for="unitlength2"></label>
+                <select style="height: 35px;width: 160px; " class="top_height" name="length_unit" id="unitlength2">
+                    <option value="millimeter">millimeter</option>
+                    <option value="nanometer">nanometer</option>
+                    <option value="micrometer">micrometer</option>
+                    <option value="centimeter">centimeter</option>
+                    <option value="yard">yard</option>
+                    <option value="meter">meter</option>
+                    <option value="inch">inch</option>
+                    <option value="feet">feet</option>
+                    <option value="kilometer">kilometer</option>
+                    <option value="mile">mile</option>
+                </select>
+            </div>
+            <div class="flex_box">
+            <input class="top_height2" placeholder="Enter your value" type="number" name="" id="userinplength">
+           
+            <div id="answerlength" class="white_box top_height"style="top: 100px;left: 85px;">Answer</div>
+        </div>
+        <div onclick="convertlength()" class="flex_box top_height" style="top: 100px;
+        left: 37px;"><button style="background-color: red;font-weight: bold;">convert</button></div>
+        </div>
+
+
+        <div style="position: absolute; right: 20px;" class="box2" id="area_box">
+            <div class="flex_box">
+                <label class="" for="unitarea1"></label>
+                <select class="top_height"style="height: 35px;width: 160px; "  name="length_unit" id="unitarea1">
+                    <option value="millimeter square">millimeter square</option>
+                    <option value="nanometer square">nanometer square</option>
+                    <option value="micrometer square">micrometer square</option>
+                    <option value="centimeter square">centimeter square</option>
+                    <option value="yard square">yard square</option>
+                    <option value="meter square">meter square</option>
+                    <option value="inch square">inch square</option>
+                    <option value="feet square">feet square</option>
+                    <option value="kilometer square">kilometer square</option>
+                    <option value="mile square">mile square</option>
+                </select>
+                <h5 class="top_height" style="left: 40px;">TO</h5>
+                <label class="" for="unitarea2"></label>
+                <select style="height: 35px;width: 160px; " class="top_height" name="length_unit" id="unitarea2">
+                    <option value="millimeter square">millimeter square</option>
+                    <option value="nanometer square">nanometer square</option>
+                    <option value="micrometer square">micrometer square</option>
+                    <option value="centimeter square">centimeter square</option>
+                    <option value="yard square">yard square</option>
+                    <option value="meter square">meter square</option>
+                    <option value="inch square">inch square</option>
+                    <option value="feet square">feet square</option>
+                    <option value="kilometer square">kilometer square</option>
+                    <option value="mile square">mile square</option>
+                </select>
+            </div>
+            <div class="flex_box">
+            <input class="top_height" placeholder="Enter your value" style="left: 21px; height: 30px;top: 100px;" type="number" name="" id="userinparea">
+           
+            <div id="answerarea" class="white_box top_height"style="top: 100px;left: 85px;">Answer</div>
+        </div>
+        <div onclick="convertarea()" class="flex_box top_height" style="top: 100px;
+        left: 37px;"><button style="background-color: red;font-weight: bold;">convert</button></div>
+        </div>
+
+
+        <div style="position: absolute; right: 20px;" class="box2" id="volume_box">
+            <div class="flex_box">
+                <label class="" for="unitvolume1"></label>
+                <select class="top_height"style="height: 35px;width: 160px; "  name="length_unit" id="unitvolume1">
+                    <option value="cubic millimeter">cubic millimeter</option>
+                    <option value="liter">liter</option>
+                    <option value="milliliter">milliliter</option>
+                    <option value="cubic centimeter">cubic centimeter</option>
+                    <option value="cubic yard">cubic yard</option>
+                    <option value="cubic meter">cubic meter</option>
+                    <option value="cubic inch">cubic inch</option>
+                    <option value="cubic feet">cubic feet</option>
+                    <option value="cubic kilometer">cubic kilometer</option>
+                    <option value="cubic mile">cubic mile</option>
+                </select>
+                <h5 class="top_height" style="left: 40px;">TO</h5>
+                <label class="" for="unitvolume2"></label>
+                <select style="height: 35px;width: 160px; " class="top_height" name="length_unit" id="unitvolume2">
+                    <option value="cubic millimeter">cubic millimeter</option>
+                    <option value="liter">liter</option>
+                    <option value="milliliter">milliliter</option>
+                    <option value="cubic centimeter">cubic centimeter</option>
+                    <option value="cubic yard">cubic yard</option>
+                    <option value="cubic meter">cubic meter</option>
+                    <option value="cubic inch">cubic inch</option>
+                    <option value="cubic feet">cubic feet</option>
+                    <option value="cubic kilometer">cubic kilometer</option>
+                    <option value="cubic mile">cubic mile</option>
+                </select>
+            </div>
+            <div class="flex_box">
+            <input class="top_height" placeholder="Enter your value" style="left: 21px; height: 30px;top: 100px;" type="number" name="" id="userinpvolume">
+           
+            <div id="answervolume" class="white_box top_height"style="top: 100px;left: 85px;">Answer</div>
+        </div>
+        <div class="flex_box top_height" style="top: 100px;
+        left: 37px;"><button onclick="convertvolume()" style="background-color: red;font-weight: bold;">convert</button></div>
+        </div>
+
+
+        <div style="position: absolute; right: 20px;" class="box2" id="time_box">
+            <div class="flex_box">
+                <label class="" for="unittime1"></label>
+                <select class="top_height"style="height: 35px;width: 160px; "  name="length_unit" id="unittime1">
+                    <option value="milliseconds">milliseconds</option>
+                    <option value="nanoseconds">nanoseconds</option>
+                    <option value="microseconds">microseconds</option>
+                    <option value="seconds">seconds</option>
+                    <option value="minutes">minutes</option>
+                    <option value="hours">hours</option>
+                    <option value="days">days</option>
+                  
+                </select>
+                <h5 class="top_height" style="left: 40px;">TO</h5>
+                <label class="" for="unittime2"></label>
+                <select style="height: 35px;width: 160px; " class="top_height" name="length_unit" id="unittime2">
+                    <option value="milliseconds">milliseconds</option>
+                    <option value="nanoseconds">nanoseconds</option>
+                    <option value="microseconds">microseconds</option>
+                    <option value="seconds">seconds</option>
+                    <option value="minutes">minutes</option>
+                    <option value="hours">hours</option>
+                    <option value="days">days</option>
+                </select>
+            </div>
+            <div class="flex_box">
+            <input class="top_height" placeholder="Enter your value" style="left: 21px; height: 30px;top: 100px;" type="number" name="" id="userinptime">
+           
+            <div  id="answertime" class="white_box top_height"style="top: 100px;left: 85px;">Answer</div>
+        </div>
+        <div onclick="converttime()" class="flex_box top_height" style="top: 100px;
+        left: 37px;"><button style="background-color: red;font-weight: bold;">convert</button></div>
+        </div>
+
+
+
+        <div style="position: absolute; right: 20px;" class="box2" id="temperature_box">
+            <div class="flex_box">
+                <label class="" for="unittemperature1"></label>
+                <select class="top_height"style="height: 35px;width: 160px; "  name="length_unit" id="unittemperature1">
+                    <option value="celsius">celsius</option>
+                    <option value="kelvin">kelvin</option>
+                    <option value="fahrenheit">fahrenheit</option>
+                
+                </select>
+                <h5 class="top_height" style="left: 40px;">TO</h5>
+                <label class="" for="unittemperature2"></label>
+                <select style="height: 35px;width: 160px; " class="top_height" name="length_unit" id="unittemperature2">
+                    <option value="celsius">celsius</option>
+                    <option value="kelvin">kelvin</option>
+                    <option value="fahrenheit">fahrenheit</option>
+                </select>
+            </div>
+            <div class="flex_box">
+            <!-- <input id="sk" class="top_height" placeholder="Enter your value" style="left: 21px; height: 30px;top: 100px;" type="number" name=""> -->
+           <input value="null" placeholder="Enter your value"  class="top_height2" type="number" name="" id="sk">
+            <div id="answertemperature" class="white_box top_height"style="top: 100px;left: 85px;">Answer</div>
+        </div>
+        <div onclick="converttemperature()" class="flex_box top_height" style="top: 100px;
+        left: 37px;"><button style="background-color: red;font-weight: bold;">convert</button></div>
+        </div>
+
+
+
+        <div style="position: absolute; right: 20px;" class="box2" id="weight_box">
+            <div class="flex_box">
+                <label class="" for="unitweight1"></label>
+                <select class="top_height"style="height: 35px;width: 160px; "  name="length_unit" id="unitweight1">
+                    <option value="milligram">milligram</option>
+                    <option value="gram">gram</option>
+                    <option value="kilogram">kilogram</option>
+                    <option value="ton">ton</option>
+                    <option value="metric ton">metric ton</option>
+                    <option value="pound">pound</option>
+                    <option value="atomic mass unit">atomic mass unit</option>
+                    <option value="long ton">long ton</option>
+                    <option value="short ton">short ton</option>
+                    <option value="carrat">carrat</option>
+                    <option value="ounce">ounce</option>
+                </select>
+                <h5 class="top_height" style="left: 40px;">TO</h5>
+                <label class="" for="unitweight2"></label>
+                <select style="height: 35px;width: 160px; " class="top_height" name="length_unit" id="unitweight2">
+                    <option value="milligram">milligram</option>
+                    <option value="gram">gram</option>
+                    <option value="kilogram">kilogram</option>
+                    <option value="ton">ton</option>
+                    <option value="metric ton">metric ton</option>
+                    <option value="pound">pound</option>
+                    <option value="atomic mass unit">atomic mass unit</option>
+                    <option value="long ton">long ton</option>
+                    <option value="short ton">short ton</option>
+                    <option value="carrat">carrat</option>
+                    <option value="ounce">ounce</option>
+                </select>
+            </div>
+            <div class="flex_box">
+            <input id="userinpweight" class="top_height" placeholder="Enter your value" style="left: 21px; height: 30px;top: 100px;" type="number" name="" id="userinp">
+           
+            <div id="answerweight" class="white_box top_height"style="top: 100px;left: 85px;">Answer</div>
+        </div>
+        <div class="flex_box top_height" style="top: 100px;
+        left: 37px;"><button onclick="convertweight()" style="background-color: red;font-weight: bold;">convert</button></div>
+        </div>
+
+    </div>
+    <script src="/javascript/index.js"></script>
+    <script src="/javascript/indexl.js"></script>
+    <script src="/javascript/indexa.js"></script>
+    <script src="/javascript/indexv.js"></script>
+    <script src="/javascript/indexw.js"></script>
+    <script src="/javascript/indext.js"></script>
+</body>
+
+</html>

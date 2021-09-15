@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths</title>
+    <link rel="stylesheet" href="/css/page.css">
+    <link rel="stylesheet" href="/css/box.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/css/background.css">
+</head>
+
+<body class="black_bg" id="body">
+    <nav class="nav_black" id="navbar">
+        <ul id="navitems">
+            <li class="navitem"> <a class="nav_black" href="/index.html">HOME</a> </li>
+            <li class="navitem"> <a class="nav_black" href="">XYZ</a> </li>
+     
+            <li class="navitem">
+                ChangeTheam
+                <input style="width: 30px;" type="range" min="1" max="2" class="slider" id="myRange">
+            </li>
+        </ul>
+    </nav>
+    <div style="flex-direction: column; text-align: center;" class="flex_box margin">
+        <div class="box" id="area1">
+            <h2 style="color: black;" class="middle">Circle</h2>
+            <input id="radius" style="height: 40px;" type="number" name="" placeholder="Enter radius" id="">
+            <button class = "margin"onclick="areac()">calculate</button>
+            <h2 id ="circlearea" style="color: black;">AREA</h2>
+        </div><br>
+        <div class="box" id="area2">
+            <h2 style="color: black;" class="middle">Square</h2>
+            <input id="side" style="height: 40px;" type="number" name="" placeholder="Enter side" id="">
+            <button class = "margin"onclick="areas()">calculate</button>
+            <h2 id ="squarearea" style="color: black;">AREA</h2>
+        </div><br>
+        <div class="box" id="area3">
+            <h2 style="color: black;" class="middle">Rectangle</h2>
+            <input id="side1" style="height: 40px;" type="number" name="" placeholder="Enter length" >
+            <input id="side2" style="height: 40px;" type="number" name="" placeholder="Enter width" >
+            <button class = "margin"onclick="arear()">calculate</button>
+            <h2 id ="rectanglearea" style="color: black;">AREA</h2>
+        </div><br>
+        <div class="box" id="area4">
+            <h2 style="color: black;" class="middle">Right angle triangle</h2>
+            <input id="side3" style="height: 40px;" type="number" name="" placeholder="Enter height" >
+            <input id="side4" style="height: 40px;" type="number" name="" placeholder="Enter base" >
+            <button class = "margin"onclick="areat()">calculate</button>
+            <h2 id ="trianglearea" style="color: black;">AREA</h2>
+        </div><br>
+    </div>
+
+    
+    <script src="/javascript/index.js"></script>
+</body>
+
+</html>
